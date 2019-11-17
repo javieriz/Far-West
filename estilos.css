@@ -1,0 +1,105 @@
+*{
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+body {
+	font-family: 'Archivo Black', sans-serif;
+}
+	.general {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+		.header {
+			background: #7c4102;
+			display: flex;
+			flex-flow: column nowrap;
+		}
+			.iconos {
+			display: flex;
+			flex-flow: row nowrap;
+			align-items: center;
+			background: #b26022;
+		}
+				.logo {
+					flex: 1 1 auto;
+				}
+					.titulo {
+						flex: 5 1 auto;
+						text-align: center;
+						vertical-align: middle;
+					}
+						.atrapasueños {
+							flex: 1 1 auto;
+						}
+							.barra_de_navegacion {
+								background: #7c4102;
+								flex: 1 1 100%;
+							}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #b26022;
+}
+	li {
+		float: left;
+	}
+		li a {
+			text-align: center;
+			text-decoration: none;
+		}
+.web {
+	background-color: #e2b222;
+}
+	li a:hover {
+		background: #f19431;
+	}
+		a:hover, a:visited, a:link, a:active {
+			text-decoration: none;
+		}
+			a {
+				color: white;
+			}
+.section {
+	display: flex;
+}
+.articulos {
+	flex: 2 1 auto;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+}
+	.article {
+		background: #f19431;
+		flex: 1 1 30%;
+		color: #ffffff;
+	}
+		.article h2 {
+			text-transform: uppercase;
+		}
+.footer {
+	background: #7c4102;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+	.pie {
+		background: #b26022;
+		width: 300px;
+		text-align: center;
+		vertical-align: middle;
+	}
+@media all and (max-width: 800px){
+.section {
+	flex-direction: column;
+}
+	.menu {
+		flex-direction: column;
+	}
+	@media all and (max-width: 600px){
+		.articulos {
+			flex-direction: column;
+		}
